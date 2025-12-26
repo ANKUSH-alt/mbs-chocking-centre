@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBS Coaching Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #ff9800;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #e68900; }
+
+    nav {
+      background: #1a1a1a;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav ul li a:hover { color: #ff9800; }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .section-title h2 {
+      font-size: 2.3rem;
+      color: #222;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card h3 { margin-bottom: 15px; color: #ff9800; }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .contact {
+      background: #f9f9f9;
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .contact form {
+      display: grid;
+      gap: 15px;
+    }
+    .contact input, .contact textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 25px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>MBS Coaching Centre</h1>
+    <p>Success Begins Here – Learn, Grow & Achieve</p>
+    <a href="#contact" class="btn">Join Now</a>
+  </header>
+
+  <section id="courses">
+    <div class="section-title">
+      <h2>Our Courses</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Class 6–8</h3>
+        <p>Concept clarity in Maths, Science, English and Social Science with regular tests.</p>
+      </div>
+      <div class="card">
+        <h3>Class 9–10</h3>
+        <p>Board-oriented teaching, NCERT focus, doubt sessions and revision modules.</p>
+      </div>
+      <div class="card">
+        <h3>Class 11–12</h3>
+        <p>Specialized coaching for Science stream with strong exam preparation strategy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources">
+    <div class="section-title">
+      <h2>Study Resources (Free PDFs)</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Class 6–8 PDFs</h3>
+        <p>Chapter-wise notes, worksheets and practice questions.</p>
+        <a href="#" class="btn">Download</a>
+      </div>
+      <div class="card">
+        <h3>Class 9–10 PDFs</h3>
+        <p>Important questions, formulas, sample papers and revisions.</p>
+        <a href="#" class="btn">Download</a>
+      </div>
+      <div class="card">
+        <h3>Class 11–12 PDFs</h3>
+        <p>Detailed notes, numericals, diagrams and board exam preparation.</p>
+        <a href="#" class="btn">Download</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">
+      <h2>About MBS Coaching</h2>
+    </div>
+    <div class="about">
+      <div>
+        <p>
+          MBS Coaching Centre is dedicated to providing quality education with
+          experienced teachers, personalized attention, and a result-oriented
+          approach. Our mission is to help every student achieve academic
+          excellence and confidence.
+        </p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Classroom">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="contact">
+      <div class="cards" style="margin-bottom:30px;">
+        <div class="card">
+          <h3>Our Address</h3>
+          <p>MBS Coaching Centre<br>
+          Your Area, Your City<br>
+          Your State – PIN CODE</p>
+        </div>
+        <div class="card">
+          <h3>Call / WhatsApp</h3>
+          <p>
+            📞 <a href="tel:+911234567890">+91 12345 67890</a><br>
+            💬 <a href="https://wa.me/911234567890" target="_blank">WhatsApp Chat</a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p>
+            📧 <a href="mailto:mbscoaching@gmail.com">mbscoaching@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MBS Coaching Centre | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
